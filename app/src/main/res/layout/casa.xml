@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título de la página -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bienvenido_a_vmusic"
+            android:textSize="29sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- VideoView para reproducir un video local -->
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Botón para volver al CRUD de inicio de sesión -->
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/volver_al_inicio_de_sesi_n"
+            android:layout_marginTop="16dp" />
+
+        <!-- Botón para avanzar a la siguiente pestaña (ubicacion.xml) -->
+        <Button
+            android:id="@+id/btnAvanzar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ir_a_ubicaci_n"
+            android:layout_marginTop="16dp" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
